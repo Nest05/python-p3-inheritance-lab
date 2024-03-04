@@ -3,6 +3,8 @@
 from user import User
 
 class Student(User):
-    
-    def learn(self):
-        pass
+    knowledge = []
+    def learn(self, knowledge):
+        new_knowledge = self.knowledge.insert(0, knowledge)
+        return new_knowledge
+       
